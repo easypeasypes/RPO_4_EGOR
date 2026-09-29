@@ -287,6 +287,6 @@ for (int i = 0; i < perv; i++) {
 	std::cout << "\n";
 }*/
 int main() { SetConsoleCP(CP_UTF8);SetConsoleOutputCP(CP_UTF8);srand(time(NULL));
-
+std::cout << "izmenenie";
 return 0;
 }
