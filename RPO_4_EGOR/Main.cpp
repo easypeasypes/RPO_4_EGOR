@@ -287,6 +287,18 @@ for (int i = 0; i < perv; i++) {
 	std::cout << "\n";
 }*/
 int main() { SetConsoleCP(CP_UTF8);SetConsoleOutputCP(CP_UTF8);srand(time(NULL));
-std::cout << "izmenenie";
+const int stroka = 3;
+const int stolb = 4;
+int arr[stroka][stolb]{};
+int sum = 0;
+for (int i = 0; i < stroka; i++) {
+	sum = 0;
+	for (int j = 0; j < stolb; j++) {
+		arr[i][j] = rand() % 10;
+		sum += arr[i][j];
+		std::cout << arr[i][j] << " ";
+	}
+	std::cout << " | " << sum << "\n";
+}
 return 0;
 }
