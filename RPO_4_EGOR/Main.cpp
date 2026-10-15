@@ -299,19 +299,17 @@ for (int i = 0; i < stroka; i++) {
 }*/
 #include <iostream>
 #include <Windows.h>
-float MyPow(float one, int two){
-	float pupow = one;
-	for (int i = 1; i < two; i++) {
-		pupow *= pupow;
+void FillArray(int arr[],const int size) {
+	for (int i = 0; i < size; i++)
+	{
+		*(arr + i) = rand() % 10;
 	}
-	return pupow;
 }
-int main() { SetConsoleCP(CP_UTF8);SetConsoleOutputCP(CP_UTF8);srand(time(NULL));
-float chislo1 = 0, chislo2 = 0;
-std::cout << "Введите число: ";
-std::cin >> chislo1;
-std::cout << "Введите степень для числа: ";
-std::cin >> chislo2;
-std::cout << MyPow(chislo1,chislo2) << "\n";
+int main() { SetConsoleCP(CP_UTF8);SetConsoleOutputCP(1251);srand(time(NULL));
+const int size = 7;
+int arr[size];
+int a = 5;
+int* car = new int;
+delete car;
 return 0;
 }
